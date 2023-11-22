@@ -17,7 +17,13 @@ body {
 
 html {
     box-sizing: border-box;
-    font-family: "Poppins", sans-serif;
+    font-family: "PlaypenSans";
+}
+
+@font-face {
+    font-family: 'PlaypenSans';
+    src: url('../Font/PlaypenSans-VariableFont_wght.ttf') format('woff2'),
+    /* Thay thế 'YourFontFamily' và đường dẫn đến font chữ của bạn */
 }
 
 .player {
@@ -44,7 +50,7 @@ html {
 }
 
 .dashboard {
-    padding: 16px 16px 6px;
+    padding: 4px 16px 6px;
     background: linear-gradient(-45deg,rgba(255, 40, 40, 0.726),rgba(177, 255, 69, 0.721),rgba(79, 255, 226, 0.763),rgba(255, 249, 74, 0.838));
     background-size: 400% 400%;
     backdrop-filter: blur(20px);
@@ -81,7 +87,6 @@ header {
 header h4 {
     color: var(--primary-color);
     font-size: 16px;
-    margin-bottom: 10px;
 }
 
 .cd-singer {
@@ -91,6 +96,7 @@ header h4 {
 }
 
 h1 {
+    line-height: 42px;
     display: -webkit-box;
     -webkit-line-clamp: 1;
     -webkit-box-orient: vertical;  
@@ -110,7 +116,7 @@ h1 {
 .cd {
     display: flex;
     margin: auto;
-    width: 240px;
+    width: 180px;
 }
 
 .cd-thumb {
@@ -120,7 +126,7 @@ h1 {
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.6);
     background-color: #333;
     background-size: cover;
-    margin: 4px auto;
+    margin: 0 auto;
 }
 
 /* CONTROL */
@@ -129,15 +135,16 @@ h1 {
     align-items: center;
     margin: 0px -14px;
     justify-content: space-around;
-    padding: 12px 16px 8px;
+    padding: 0px 16px;
 }
 
 .control .btn {
     color: var(--text-color);
     text-align: center;
-    padding: 7px 14px;
-    font-size: 24px;
+    padding: 4px 10px;
+    font-size: 16px;
     border-radius: 50%;
+    user-select: none;
 }
 
 .control .btn:hover {
@@ -151,7 +158,7 @@ h1 {
 }
 
 .control .btn-next, .control .btn-prev {
-    padding: 6px 16px;
+    padding: 4px 10px;
 }
 
 .control .btn-toggle-play {
@@ -159,7 +166,7 @@ h1 {
     height: 56px;
     border-radius: 50%;
     padding: 12px 14px 12px 18px;
-    font-size: 40px;
+    font-size: 28px;
     color: var(--primary-color);
     display: flex;
     align-items: center;
@@ -168,11 +175,10 @@ h1 {
 
 .progress {
     width: 100%;
-    margin-top: 12px;
     margin-bottom: 20px;
     box-shadow: 0 1px 4px rgba(255, 255, 255, 0.4);
     --webkit-appearance: none;
-    height: 6px;
+    height: 4px;
     background-color: linear-gradient(#ff0b0b,#333);
     outline: none;
     opacity: 0.7;
@@ -192,7 +198,7 @@ h1 {
 /* PLAYLIST */
 .playlist {
     border-radius: 8px;
-    margin-top: 490px;
+    margin-top: 392px;
     padding: 12px;
 }
 
